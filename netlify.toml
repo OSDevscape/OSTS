@@ -1,0 +1,19 @@
+[[redirects]]
+  from = "entries.json"
+  to = "/entries.json"
+  status = 200
+
+[[redirects]]
+  from = "ranks.json"
+  to = "/ranks.json"
+  status = 200
+
+[[redirects]]
+  from = "slayer.json"
+  to = "/slayer.json"
+  status = 200
+
+[[redirects]]
+  from = "slayer/*"
+  to = "/slayer.json"
+  status = 200

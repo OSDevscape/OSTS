@@ -1,0 +1,8 @@
+# Serve JSON files directly
+entries.json          /entries.json       200
+ranks.json            /ranks.json         200
+slayer.json           /slayer.json        200
+slayer/*              /slayer.json        200
+
+# Catch-all for API routes
+/*                    /index.html          200
