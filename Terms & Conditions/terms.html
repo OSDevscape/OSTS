@@ -4,6 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Terms</title>
+
+  <link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#2b2620">
+
   <style>
     :root {
       --bg: #2b2620;
@@ -100,6 +104,17 @@
     }
   </style>
 </head>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker
+        .register('/service-worker.js')
+        .catch(console.error);
+    });
+  }
+</script>
+
 <body>
   <header>
     <button class="back-btn" onclick="window.location.href='/index.html'">⬅ Back</button>

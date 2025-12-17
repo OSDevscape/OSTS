@@ -4,6 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Old School Tool Set Bot</title>
+
+  <link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#2b2620">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Old School Tool Set" />
+  <meta property="og:description" content="Welcome to the Old School Tool Set!" />
+  <meta property="og:image" content="https://old-school-tool-set.netlify.app/API\Assets\Logo\OSTS Logo.png" />
+  <meta property="og:url" content="https://old-school-tool-set.netlify.app/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Welcome" />
+  <meta name="twitter:description" content="Welcome to the Old School Tool Set!" />
+  <meta name="twitter:image" content="https://gyazo.com/1401c6ce8f6c547bf51fe482a180bcce.png" />
+
+
   <style>
     :root {
       --bg: #2b2620;
@@ -215,6 +233,17 @@
     }
   </style>
 </head>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker
+        .register('/service-worker.js')
+        .catch(console.error);
+    });
+  }
+</script>
+
 <body>
   <header>
     <nav>
