@@ -1,44 +1,49 @@
 # 0) Serve /API/overview.html as a static file
 [[redirects]]
-  from = "/API/overview.html"
-  to = "/API/overview.html"
-  status = 200
-  
+from = "/API/overview.html"
+to = "/API/overview.html"
+status = 200
 
 # 1) API JSON passthroughs...
 [[redirects]]
-  from = "/API/v1/Clan/Rank/icons.json"
-  to = "/API/v1/Clan/Rank/icons.json"
-  status = 200
+from = "/API/v1/Clan/Rank/icons.json"
+to = "/API/v1/Clan/Rank/icons.json"
+status = 200
+
+# NEW: Static assets passthrough (before API gateway)
+[[redirects]]
+from = "/API/Assets/*"
+to = "/API/Assets/:splat"
+status = 200
 
 [[redirects]]
-  from = "/API/v1/Slayer_Diaries/Monster/Entries/*"
-  to = "/API/v1/Slayer_Diaries/Monster/Entries/:splat"
-  status = 200
+from = "/API/v1/Slayer_Diaries/Monster/Entries/*"
+to = "/API/v1/Slayer_Diaries/Monster/Entries/:splat"
+status = 200
 
 [[redirects]]
-  from = "/API/v1/Slayer_Master/Head/icons.json"
-  to = "/API/v1/Slayer_Master/Head/icons.json"
-  status = 200
+from = "/API/v1/Slayer_Master/Head/icons.json"
+to = "/API/v1/Slayer_Master/Head/icons.json"
+status = 200
 
-# 2) API gateway
+# 2) API gateway (now only catches dynamic API calls)
 [[redirects]]
-  from = "/API/*"
-  to = "/.netlify/functions/api-gateway"
-  status = 200
+from = "/API/*"
+to = "/.netlify/functions/api-gateway"
+status = 200
 
 # 3) SPA catch-all
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  
-  [[redirects]]
-  from = "/license"
-  to   = "/Legal/license.html"
-  status = 200
+from = "/*"
+to = "/index.html"
+status = 200
 
 [[redirects]]
-  from = "/terms"
-  to   = "/Legal/terms.html"
-  status = 200 
+from = "/license"
+to = "/Legal/license.html"
+status = 200
+
+[[redirects]]
+from = "/terms"
+to = "/Legal/terms.html"
+status = 200
