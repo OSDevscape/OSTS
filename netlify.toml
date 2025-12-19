@@ -2,14 +2,18 @@
 # Netlify Redirects
 # =========================
 
+# Enable Pretty URLs (strips .html, adds trailing slashes)
+[build.processing.html]
+  pretty_urls = true
+
 # 1) API gateway with rate limiting (Netlify Function)
 [[redirects]]
-from = "/API/*"
-to = "/.netlify/functions/api-gateway"
-status = 200
+  from = "/API/*"
+  to = "/.netlify/functions/api-gateway"
+  status = 200
 
 # 2) SPA catch-all
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+  from = "/*"
+  to = "/index.html"
+  status = 200
