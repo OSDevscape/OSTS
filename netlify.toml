@@ -3,6 +3,7 @@
   from = "/API/overview.html"
   to = "/API/overview.html"
   status = 200
+  
 
 # 1) API JSON passthroughs...
 [[redirects]]
@@ -31,3 +32,13 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  
+  [[redirects]]
+  from = "/license"
+  to   = "/Legal/license.html"
+  status = 200
+
+[[redirects]]
+  from = "/terms"
+  to   = "/Legal/terms.html"
+  status = 200 
