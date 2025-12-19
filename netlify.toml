@@ -1,10 +1,4 @@
-# 1) Custom 404 page (MOST IMPORTANT - FIRST)
-[[redirects]]
-from = "/*"
-to = "/404.html"
-status = 404
-
-# 2) Static legal pages
+# 1) Static legal pages
 [[redirects]]
 from = "/license"
 to = "/Legal/license.html"
@@ -15,7 +9,7 @@ from = "/terms"
 to = "/Legal/terms.html"
 status = 200
 
-# 3) API static files (overview, JSON, assets)
+# 2) API static files (overview, JSON, assets)
 [[redirects]]
 from = "/API/overview.html"
 to = "/API/overview.html"
@@ -41,14 +35,14 @@ from = "/API/v1/Slayer_Master/Head/icons.json"
 to = "/API/v1/Slayer_Master/Head/icons.json"
 status = 200
 
-# 4) API gateway (dynamic API calls only)
+# 3) API gateway (dynamic API calls only)
 [[redirects]]
 from = "/API/*"
 to = "/.netlify/functions/api-gateway"
 status = 200
 
-# 5) SPA client-side routing (LAST)
+# 4) Custom 404 page (catch‑all)
 [[redirects]]
 from = "/*"
-to = "/index.html"
-status = 200
+to = "/404.html"
+status = 404
