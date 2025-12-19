@@ -4,41 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Old School Tool Set Bot</title>
-    <link rel="stylesheet" href="/styles.css">
 
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#2b2620">
-  
-<!-- index.html -->
-<link rel="canonical" href="/" />
 
-<!-- Bot/Commands pages -->
-<link rel="canonical" href="/Bot/Commands/cabinet" />
-<link rel="canonical" href="/Bot/Commands/deputy" />
-<link rel="canonical" href="/Bot/Commands/guest" />
-<link rel="canonical" href="/Bot/Commands/member" />
-<link rel="canonical" href="/Bot/Commands/owner" />
+  <link rel="canonical" href="/" />
 
-<!-- Legal pages -->
-<link rel="canonical" href="/license" />
-<link rel="canonical" href="/privacy" />
-<link rel="canonical" href="/terms" />
-
-<!-- API overview -->
-<link rel="canonical" href="/API/overview" />
-
-  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Old School Tool Set" />
-  <meta property="og:description" content="Welcome to the Old School Tool Set!" />
+  <meta property="og:description" content="A Discord bot for Old School RuneScape clans, powered by the Old School Tool Set API." />
   <meta property="og:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
-  <meta property="og:url" content="http://osts.website/" />
+  <meta property="og:url" content="https://osts.website/" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Welcome" />
-  <meta name="twitter:description" content="Welcome to the Old School Tool Set!" />
+  <meta name="twitter:title" content="Old School Tool Set" />
+  <meta name="twitter:description" content="A Discord bot for Old School RuneScape clans, powered by the Old School Tool Set API." />
   <meta name="twitter:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
+
+  <link rel="stylesheet" href="/styles.css">
 </head>
 
 <script>
@@ -52,60 +35,66 @@
 </script>
 
 <body class="home-page">
-<header>
-  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-    ☰ Menu
-  </button>
-  
-  <nav class="main-nav">
-    <!-- Commands dropdown -->
-    <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(event, 'commandsDropdown')">
-        🤖 Commands ▼
-      </button>
-      <div class="dropdown-content" id="commandsDropdown">
-        <a href="/Bot/Commands/owner.html">Owner</a>
-        <a href="/Bot/Commands/deputy.html">Deputy Owner</a>
-        <a href="/Bot/Commands/cabinet.html">Cabinet</a>
-        <a href="/Bot/Commands/member.html">Member</a>
-        <a href="/Bot/Commands/guest.html">Guest</a>
-      </div>
-    </div>
+  <header class="flex-header">
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      ☰ Menu
+    </button>
     
-    <!-- About dropdown -->
-    <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(event, 'aboutDropdown')">
-        ℹ️ About ▼
-      </button>
-      <div class="dropdown-content" id="aboutDropdown">
-        <a href="/About/bot.html">About the Bot</a>
-        <a href="/About/dev.html">About the Developer</a>
+    <nav class="main-nav">
+      <!-- Commands dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown(event, 'commandsDropdown')">
+          🤖 Commands ▼
+        </button>
+        <div class="dropdown-content" id="commandsDropdown">
+          <a href="/Bot/Commands/owner.html">Owner</a>
+          <a href="/Bot/Commands/deputy.html">Deputy Owner</a>
+          <a href="/Bot/Commands/cabinet.html">Cabinet</a>
+          <a href="/Bot/Commands/member.html">Member</a>
+          <a href="/Bot/Commands/guest.html">Guest</a>
+        </div>
       </div>
-    </div>
-    
-    <!-- API dropdown -->
-    <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(event, 'apiDropdown')">
-        🗺️ API ▼
-      </button>
-      <div class="dropdown-content" id="apiDropdown">
-        <a href="/API/overview.html">API Overview</a>
+      
+      <!-- About dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown(event, 'aboutDropdown')">
+          ℹ️ About ▼
+        </button>
+        <div class="dropdown-content" id="aboutDropdown">
+          <a href="/About/bot.html">About the Bot</a>
+          <a href="/About/dev.html">About the Developer</a>
+        </div>
       </div>
-    </div>
-    
-    <!-- Legal dropdown -->
-    <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(event, 'legalDropdown')">
-        📜 Legal ▼
-      </button>
-      <div class="dropdown-content" id="legalDropdown">
-        <a href="/Legal/terms.html">Terms of Service</a>
-        <a href="/Legal/privacy.html">Privacy Policy</a>
-        <a href="/Legal/license.html">License</a>
+      
+      <!-- API dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown(event, 'apiDropdown')">
+          🗺️ API ▼
+        </button>
+        <div class="dropdown-content" id="apiDropdown">
+          <a href="/API/overview.html">API Overview</a>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+      
+      <!-- Legal dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown(event, 'legalDropdown')">
+          📜 Legal ▼
+        </button>
+        <div class="dropdown-content" id="legalDropdown">
+          <a href="/Legal/terms.html">Terms of Service</a>
+          <a href="/Legal/privacy.html">Privacy Policy</a>
+          <a href="/Legal/license.html">License</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page copy button -->
+    <button class="copy-link" title="Copy page link" onclick="copyCurrentUrl(event)">
+      <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png"
+           alt="Copy link" width="24" height="24">
+    </button>
+  </header>
 
   <div class="wrapper">
     <img src="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png"
@@ -113,8 +102,7 @@
 
     <h1>Old School Tool Set</h1>
     <p class="hero-text">
-      A Discord bot built for <strong>Old School RuneScape</strong> communities &mdash;
-      bringing moderation, economy, and powerful clan utilities into one lore‑friendly package.
+      A Discord bot built for Old School RuneScape communities — bringing moderation, economy, and powerful clan utilities into one lore‑friendly package.
     </p>
 
     <div class="pill-row">
@@ -124,33 +112,18 @@
     </div>
 
     <div class="cta-row">
-      <a class="cta-btn" href="https://discord.com/oauth2/authorize?client_id=1424876843688788080" target="_blank">
-        Invite to your server
-      </a>
-      <a class="cta-btn cta-secondary" href="https://discord.gg/GXQcjh5wAm" target="_blank">
-        Join support server
-      </a>
+      <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&scope=bot%20applications.commands"
+         class="cta-btn">Invite to your server</a>
+      <a href="https://discord.gg/YOUR_SUPPORT_SERVER" class="cta-btn cta-secondary">Join support server</a>
     </div>
 
     <div class="panel">
       <h3>What the bot can do</h3>
       <ul class="feature-list">
-        <li>Guided server setup tailored to OSRS clans and friends chats.</li>
-        <li>Moderation tools: logging, filters, and quick actions for staff.</li>
-        <li>Chat leveling and XP roles to reward active members.</li>
-        <li>GP based economy with balances, shops, and configurable items.</li>
-        <li>Clan utilities powered by Wise Old Man and the OSTS API: Slayer diaries, ranks, and more.</li>
-        <li>Tag and reminder system to keep events and announcements organized.</li>
-      </ul>
-    </div>
-
-    <div class="panel">
-      <h3>Getting started</h3>
-      <ul class="feature-list">
-        <li>Invite the bot using the button above and select your server.</li>
-        <li>Run <code>/setup</code> in your admin channel to start the guided configuration.</li>
-        <li>Use <code>/help</code> at any time for a categorized list of commands.</li>
-        <li>Visit the support server if you need help with advanced features or feedback.</li>
+        <li>Guided server setup tailored to OSRS clans.</li>
+        <li>Clan rank syncing backed by the OSTS API.</li>
+        <li>Competition and event helpers powered by Wise Old Man.</li>
+        <li>Utility commands that respect RuneScape’s lore and style.</li>
       </ul>
     </div>
   </div>
@@ -159,8 +132,8 @@
     © 2025 OSMays8338 — All Rights Reserved.
   </footer>
 
-<script src="main.js"></script>
-</body>
-</html>
+  <div id="copy-toast">Link copied!</div>
+
+  <script src="/main.js"></script>
 </body>
 </html>

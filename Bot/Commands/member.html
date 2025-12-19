@@ -3,99 +3,207 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Member Commands</title>
+  <title>OSTS · Member Commands</title>
   <link rel="stylesheet" href="/styles.css">
-  
-<!-- index.html -->
-<link rel="canonical" href="/" />
-
-<!-- Bot/Commands pages -->
-<link rel="canonical" href="/Bot/Commands/cabinet" />
-<link rel="canonical" href="/Bot/Commands/deputy" />
-<link rel="canonical" href="/Bot/Commands/guest" />
-<link rel="canonical" href="/Bot/Commands/member" />
-<link rel="canonical" href="/Bot/Commands/owner" />
-
-<!-- Legal pages -->
-<link rel="canonical" href="/license" />
-<link rel="canonical" href="/privacy" />
-<link rel="canonical" href="/terms" />
-
-<!-- API overview -->
-<link rel="canonical" href="/API/overview" />
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Old School Tool Set" />
-  <meta property="og:description" content="Welcome to the Old School Tool Set!" />
-  <meta property="og:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
-  <meta property="og:url" content="http://osts.website/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Welcome" />
-  <meta name="twitter:description" content="Welcome to the Old School Tool Set!" />
-  <meta name="twitter:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
+  <link rel="canonical" href="/Bot/Commands/member" />
 </head>
 
 <body class="back-header">
   <header>
     <button class="back-btn" onclick="window.location.href='/'">⬅ Back</button>
+
+    <button class="copy-link" title="Copy page link" onclick="copyCurrentUrl(event)">
+      <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png"
+           alt="Copy link" width="24" height="24">
+    </button>
   </header>
 
   <div class="wrapper">
     <h1>Member Commands</h1>
     <p class="hero-text">
-      Member commands are available to regular clan members and friends who use the bot every day.
+      Member commands are available to regular clan members and cover economy, progression, utility, and gameplay features.
     </p>
-
-        <div class="panel">
-      <h3>Slayer Diaries</h3>
-      <p>Lookup tools for The Slayer Diaries monster compendium.</p>
-      <ul class="feature-list">
-        <li><code>/slayer</code> – Search The Slayer Diaries for a specific Slayer monster.</li>
-        <li><code>/entry</code> – View a detailed entry from The Slayer Diaries.</li>
-      </ul>
-    </div>
-
 
     <div class="panel">
       <h3>Economy</h3>
       <p>Currency, banking, gambling, and sales commands.</p>
       <ul class="feature-list">
-        <li><code>!atm</code> – Open the clan ATM to manage your funds.</li>
-        <li><code>!dep</code> – Deposit coins into your in‑bot bank balance.</li>
-        <li><code>!lb</code> – View the clan economy leaderboard.</li>
-        <li><code>!rob</code> – Attempt to rob another member for coins.</li>
-        <li><code>!rr</code> – Play Russian roulette style coin gamble.</li>
-        <li><code>!sell</code> – Sell items for coins.</li>
-        <li><code>!slots</code> – Spin the slot machine for a chance to win.</li>
-        <li><code>!store</code> – Open the in‑bot store to browse items.</li>
-        <li><code>!wd</code> – Withdraw coins from your in‑bot bank.</li>
+        <li>
+          <code>!atm</code> – Check your personal balance.
+          <button class="copy-endpoint" data-url="!atm" data-message="!atm Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!coffer</code> – Daily clan coffer contribution reward.
+          <button class="copy-endpoint" data-url="!coffer" data-message="!coffer Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!dep</code> – Deposit money into your account.
+          <button class="copy-endpoint" data-url="!dep" data-message="!dep Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!dink</code> – Fun social currency interaction.
+          <button class="copy-endpoint" data-url="!dink" data-message="!dink Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!fordink</code> – Another social‑economy command.
+          <button class="copy-endpoint" data-url="!fordink" data-message="!fordink Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!lb</code> – View the clan economy leaderboard.
+          <button class="copy-endpoint" data-url="!lb" data-message="!lb Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!rob</code> – Attempt to steal from another member.
+          <button class="copy-endpoint" data-url="!rob" data-message="!rob Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!rr</code> – Russian roulette‑style gamble.
+          <button class="copy-endpoint" data-url="!rr" data-message="!rr Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!sell</code> – Sell items for currency.
+          <button class="copy-endpoint" data-url="!sell" data-message="!sell Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!slots</code> – Spin the slots for a chance at rewards.
+          <button class="copy-endpoint" data-url="!slots" data-message="!slots Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!store</code> – Open the clan store interface.
+          <button class="copy-endpoint" data-url="!store" data-message="!store Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!wd</code> – Withdraw money from your account.
+          <button class="copy-endpoint" data-url="!wd" data-message="!wd Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
       </ul>
     </div>
 
     <div class="panel">
       <h3>Progression</h3>
-      <p>Hourly, daily, weekly, and monthly rewards plus progression tools.</p>
+      <p>Leveling, skills, quests, and recurring tasks.</p>
       <ul class="feature-list">
-        <li><code>!coffer</code> – Claim your daily reward (coffer).</li>
-        <li><code>!quest</code> – Claim your monthly reward (quest).</li>
-        <li><code>!raid</code> – Claim your weekly reward (raid).</li>
-        <li><code>!task</code> – Claim your hourly reward (task).</li>
-        <li><code>!skillsxp</code> – Check your skills experience progress.</li>
+        <li>
+          <code>!level</code> – Check your current bot level or XP tier.
+          <button class="copy-endpoint" data-url="!level" data-message="!level Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!quest</code> – Monthly quest‑style objective and reward.
+          <button class="copy-endpoint" data-url="!quest" data-message="!quest Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!raid</code> – Weekly raid objective and reward.
+          <button class="copy-endpoint" data-url="!raid" data-message="!raid Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!skillsxp</code> – View experience gains by skill.
+          <button class="copy-endpoint" data-url="!skillsxp" data-message="!skillsxp Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!task</code> – Hourly task objective and reward.
+          <button class="copy-endpoint" data-url="!task" data-message="!task Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
       </ul>
     </div>
 
     <div class="panel">
       <h3>Utility</h3>
-      <p>Info, profiles, convenience, and social tools.</p>
+      <p>Info, profiles, tags, and convenience tools.</p>
       <ul class="feature-list">
-        <li><code>!botinfo</code> – View information and stats about the bot.</li>
-        <li><code>!dink</code> – Use the dink social/fun utility command.</li>
-        <li><code>!fordink</code> – Manage or interact with dink‑related features.</li>
-        <li><code>!time</code> – Show the current server or bot time.</li>
-        <li><code>!vote</code> – Get the vote link or confirm your vote status.</li>
+        <li>
+          <code>!apply</code> – Submit an application to join the clan.
+          <button class="copy-endpoint" data-url="!apply" data-message="!apply Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!botinfo</code> – Show information about the bot.
+          <button class="copy-endpoint" data-url="!botinfo" data-message="!botinfo Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!entry</code> – View a stored log or entry for your account.
+          <button class="copy-endpoint" data-url="!entry" data-message="!entry Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!stats</code> – View your overall stats summary.
+          <button class="copy-endpoint" data-url="!stats" data-message="!stats Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!time</code> – Check the server or clan time.
+          <button class="copy-endpoint" data-url="!time" data-message="!time Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!vote</code> – Get the link to vote for the bot.
+          <button class="copy-endpoint" data-url="!vote" data-message="!vote Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!create-tag</code> – Create a custom saved response tag.
+          <button class="copy-endpoint" data-url="!create-tag" data-message="!create-tag Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!remove-tag</code> – Delete one of your custom tags.
+          <button class="copy-endpoint" data-url="!remove-tag" data-message="!remove-tag Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!tag</code> – Send a saved tag response.
+          <button class="copy-endpoint" data-url="!tag" data-message="!tag Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!taglist</code> – List available tags.
+          <button class="copy-endpoint" data-url="!taglist" data-message="!taglist Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
       </ul>
     </div>
 
@@ -103,10 +211,55 @@
       <h3>Gameplay</h3>
       <p>Active resource gathering and inventory management.</p>
       <ul class="feature-list">
-        <li><code>!chop</code> – Chop logs to gather resources.</li>
-        <li><code>!fish</code> – Catch fish as a resource activity.</li>
-        <li><code>!inv</code> – View your current inventory.</li>
-        <li><code>!mine</code> – Mine ores to gather resources.</li>
+        <li>
+          <code>!chop</code> – Chop logs to gather resources.
+          <button class="copy-endpoint" data-url="!chop" data-message="!chop Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!fish</code> – Catch fish as a resource activity.
+          <button class="copy-endpoint" data-url="!fish" data-message="!fish Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!inv</code> – View your current inventory.
+          <button class="copy-endpoint" data-url="!inv" data-message="!inv Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>!mine</code> – Mine ores to gather resources.
+          <button class="copy-endpoint" data-url="!mine" data-message="!mine Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png" alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>Slayer Diaries slash commands</h3>
+      <p>Slash commands that integrate with the OSTS Slayer Diaries API.</p>
+      <ul class="feature-list">
+        <li>
+          <code>/slayer</code> – Search The Slayer Diaries for a specific Slayer monster.
+          <button class="copy-endpoint"
+                  data-url="/slayer"
+                  data-message="/slayer Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png"
+                 alt="Copy command" width="18" height="18">
+          </button>
+        </li>
+        <li>
+          <code>/entry</code> – View a detailed entry from The Slayer Diaries.
+          <button class="copy-endpoint"
+                  data-url="/entry"
+                  data-message="/entry Command Copied">
+            <img src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png"
+                 alt="Copy command" width="18" height="18">
+          </button>
+        </li>
       </ul>
     </div>
   </div>
@@ -114,5 +267,9 @@
   <footer>
     © 2025 OSMays8338 — All Rights Reserved.
   </footer>
+
+  <div id="copy-toast">Link copied!</div>
+
+  <script src="/main.js"></script>
 </body>
 </html>
