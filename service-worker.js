@@ -1,13 +1,13 @@
 const CACHE_NAME = 'osts-v1';
 const OFFLINE_URLS = [
-  '/',
-  '/index.html',
-  '/api.html',
-  '/terms.html',
-  '/privacy.html',
-  '/license.html',
-  '/icons/osts-192.png',
-  '/icons/osts-512.png'
+  '/OSTS/',
+  '/OSTS/index.html',
+  '/OSTS/API/overview.html',
+  '/OSTS/Pages/Legal/terms.html',
+  '/OSTS/Pages/Legal/privacy.html',
+  '/OSTS/Pages/Legal/license.html',
+  'OSTS/API/Assets/Logo/OSTS_Logo-192X192.png',
+  'OSTS/API/Assets/Logo/OSTS_Logo-512X512.png'
 ];
 
 self.addEventListener('install', event => {
