@@ -1,0 +1,218 @@
+    body {
+      background-color: #3c3c3c;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+    .header {
+  background: url('https://i.gyazo.com/d128d60ba90131d10a2a5a8c5235eb44.jpeg') no-repeat center center;
+  background-size: 100% 100%;
+  height: 200px;
+  width: 100%;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Corrected from 'left' */
+  margin-top: -70px;
+  padding-left: 15px; /* Add padding here if you want to pad the whole section */
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background: url('https://gyazo.com/408cbbc58c3edb5fcb229ddcee679e35.png') no-repeat center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.profile-text {
+  text-align: left;
+  padding-left: 10px; /* Add padding directly to the text */
+}
+
+.profile-text h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1.8em;
+  color: #f57c00;
+  text-shadow: 0 0 1px #f57c00, 0 0 20px #930000;
+  margin: 0;
+  text-align: left;
+}
+
+.profile-text p {
+  font-size: 1.1em;
+  margin: 5px 0 15px;
+  text-align: left;
+}
+
+    .button {
+  display: flex;
+  align-items: center;           /* Vertically center */
+  justify-content: center;       /* Horizontally center */
+  gap: 5px;                     /* Spacing between image and text */
+  margin: 10px auto;
+  width: 250px;
+  padding: 10px 20px;
+  background-color: #2b2b2b;
+  border: 2px solid #f57c00;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+    .button img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+    .button:hover {
+      background-color: #444;
+    }
+
+    .button img {
+      width: 28px;
+      height: 28px;
+      margin-right: 15px;
+    }
+
+    .buttons-container {
+      text-align: center;
+    }
+    
+    .footer {
+  position: flex;
+  bottom: 0;
+  width: 100%;
+  background-color: #2b2b2b;
+  color: #f57c00;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9em;
+  border-top: 1px solid #f57c00;
+}
+
+
+.link-box {
+  border: 2px solid #3c3c3c;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.link-box h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #2a2a2a;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+#install-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2b2b2b;
+  color: white;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Arial', sans-serif;
+  border-bottom: 2px solid #f57c00;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  animation: slideDown 0.4s ease-out;
+  box-sizing: border-box;
+}
+
+#install-banner.hidden {
+  display: none;
+}
+
+#install-banner span {
+  font-size: 0.95em;
+  flex-grow: 1;
+  padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.install-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+#install-banner #install-btn,
+#install-banner .dismiss-btn {
+  background-color: #2b2b2b;
+  color: white;
+  border: 2px solid #f57c00;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  max-height: 32px;
+}
+
+#install-banner #install-btn:hover,
+#install-banner .dismiss-btn:hover {
+  background-color: #444;
+}
+
+.dismiss-btn {
+  padding: 4px 8px;
+  font-size: 1em;
+  line-height: 1;
+}
