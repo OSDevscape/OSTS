@@ -79,7 +79,7 @@ body {
 .avatar {
   width: 120px;
   height: 120px;
-  background: url("https://gyazo.com/408cbbc58c3edb5fcb229ddcee679e35.png")
+  background: url("https://gyazo.com/9394d89005e53b37d2c8ec6f71662897.png")
     no-repeat center;
   background-size: cover;
   margin-bottom: 10px;
@@ -94,8 +94,8 @@ body {
 .profile-text h1 {
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 1.8em;
-  color: #f57c00;
-  text-shadow: 0 0 1px #f57c00, 0 0 20px #930000;
+  color: #94731D;
+  text-shadow: 0 0 1px #94731D, 0 0 20px #B89225;
   margin: 0;
 }
 
@@ -123,7 +123,7 @@ body {
 
 .link-box h3 {
   margin: 0 0 8px;
-  color: #f57c00;
+  color: #94731D;
 }
 
 /* Button list */
@@ -143,7 +143,7 @@ body {
   width: 250px;
   padding: 10px 20px;
   background-color: #2b2b2b;
-  border: 2px solid #f57c00;
+  border: 2px solid #94731D;
   border-radius: 25px;
   color: #ffffff;
   text-decoration: none;
@@ -166,11 +166,11 @@ body {
 .footer {
   width: 100%;
   background-color: #2b2b2b;
-  color: #f57c00;
+  color: #B89225;
   text-align: center;
   padding: 10px 0;
   font-size: 0.9em;
-  border-top: 1px solid #f57c00;
+  border-top: 1px solid #B89225;
 }
 
 /* ========== Install banner (PWA) ========== */

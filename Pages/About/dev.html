@@ -1,190 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#f57c00" />
-  <title>PJFry's Links</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About the Developer</title>
+  <link rel="stylesheet" href="/styles.css">
+  
+  <!-- index.html -->
+<link rel="canonical" href="/" />
+
+<!-- Bot/Commands pages -->
+<link rel="canonical" href="/Bot/Commands/cabinet" />
+<link rel="canonical" href="/Bot/Commands/deputy" />
+<link rel="canonical" href="/Bot/Commands/guest" />
+<link rel="canonical" href="/Bot/Commands/member" />
+<link rel="canonical" href="/Bot/Commands/owner" />
+
+<!-- Legal pages -->
+<link rel="canonical" href="/license" />
+<link rel="canonical" href="/privacy" />
+<link rel="canonical" href="/terms" />
+
+<!-- API overview -->
+<link rel="canonical" href="/API/overview" />
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="PJFry's Links" />
-  <meta property="og:description" content="This is me!!?" />
-  <meta property="og:image" content="https://gyazo.com/1401c6ce8f6c547bf51fe482a180bcce.png" />
-  <meta property="og:url" content="https://pjfry8338.netlify.app/" />
+  <meta property="og:title" content="Old School Tool Set" />
+  <meta property="og:description" content="Welcome to the Old School Tool Set!" />
+  <meta property="og:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
+  <meta property="og:url" content="http://osts.website/" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="PJFry's Links" />
-  <meta name="twitter:description" content="This is me!!!" />
-  <meta name="twitter:image" content="https://gyazo.com/1401c6ce8f6c547bf51fe482a180bcce.png" />
-
-  <link rel="stylesheet" href="/This/is/style.css" />
+  <meta name="twitter:title" content="Welcome" />
+  <meta name="twitter:description" content="Welcome to the Old School Tool Set!" />
+  <meta name="twitter:image" content="https://gyazo.com/ec47322dca1b5586ef93be1810f250bf.png" />
 </head>
+
 <body class="back-header">
-
-  <!-- Map header with overlay buttons -->
-  <header class="site-header">
-    <div class="header">
-      <button class="back-btn" type="button" onclick="window.location.href='/index.html'">
-        ⬅ Back
-      </button>
-
-      <button class="copy-link" type="button" title="Copy page link" onclick="copyCurrentUrl(event)">
-        <img
-          src="https://i.gyazo.com/b560a214d3ef3ca74e0326b766b10a38.png"
-          alt="Copy link"
-        />
-      </button>
-    </div>
+  <header>
+    <button class="back-btn" onclick="window.location.href='/index.html'">⬅ Back</button>
   </header>
 
-  <main class="container">
-    <section class="profile-section">
-      <div class="avatar"></div>
-      <div class="profile-text">
-        <h1>PJFry</h1>
-        <p>This is me!!!</p>
-      </div>
-    </section>
+  <div class="wrapper">
+    <h1>About the Developer</h1>
+    <p class="hero-text">
+      Old School Tool Set is developed and maintained by OSMays8338, an Old School RuneScape player and community admin who enjoys building tools for clans and friends chats.
+    </p>
 
-    <!-- Main Account -->
-    <section class="link-box">
-      <h2>Main Account</h2>
-      <div class="buttons-container">
-        <a
-          href="https://www.runeprofile.com/PJFry8338?page=scurrius"
-          class="button"
-          target="_blank"
-        >
-          <img
-            src="https://gyazo.com/0b7cba7160acd910bced2d1142ef8a5a.png"
-            alt="PJFry - Main"
-          />
-          PJFry8338
-        </a>
-      </div>
-    </section>
+    <div class="panel">
+      <h3>Background</h3>
+      <ul class="feature-list">
+        <li>Active in OSRS clan management and Discord community building.</li>
+        <li>Interested in Java, APIs, and automation for game tooling.</li>
+        <li>Focused on keeping the bot stable, transparent, and easy to use.</li>
+      </ul>
+    </div>
 
-    <!-- Ironman -->
-    <section class="link-box">
-      <h2>Ironman</h2>
-      <div class="buttons-container">
-        <a
-          href="https://www.runeprofile.com/Bender8338?page=camdozaal"
-          class="button"
-          target="_blank"
-        >
-          <img
-            src="https://gyazo.com/9881e4b0111dd12cd08eec9868da119c.webp"
-            alt="Bender - HCIM"
-          />
-          Bender8338
-        </a>
-      </div>
-    </section>
-
-    <!-- GIM -->
-    <section class="link-box">
-      <h2>GIM</h2>
-      <div class="buttons-container">
-        <div>
-          <h3>OperaOfLove</h3>
-          <a
-            href="https://www.runeprofile.com/Phillip8338"
-            class="button"
-            target="_blank"
-          >
-            <img
-              src="https://gyazo.com/49188698267b91be838e96afcbaa5a47.webp"
-              alt="Phillip - GIM"
-            />
-            Phillip8338
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ultimate Ironman -->
-    <section class="link-box">
-      <h2>Ultimate Ironman</h2>
-      <div class="buttons-container">
-        <a
-          href="https://www.runeprofile.com/Flexo8338"
-          class="button"
-          target="_blank"
-        >
-          <img
-            src="https://gyazo.com/b5a94ecd3ffbd2f172075e4fcb70d676.webp"
-            alt="Flexo - UIM"
-          />
-          Flexo8338
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; OSMays8338 2025</p>
-  </footer>
-
-  <!-- Install Banner -->
-  <div id="install-banner" class="slide-down hidden">
-    <span>📲 Install my App</span>
-    <div class="install-actions">
-      <button id="install-btn">Install</button>
-      <button id="dismiss-btn" class="dismiss-btn">✖</button>
+    <div class="panel">
+      <h3>Contact & support</h3>
+      <ul class="feature-list">
+        <li>Join the support server via the link on the home page.</li>
+        <li>Use the feedback channels to report bugs or suggest features.</li>
+        <li>API and technical questions are welcome in the developer channels.</li>
+      </ul>
     </div>
   </div>
+  
+      <!-- 
+      ╔══════════════════════════════════════════════════════════════╗
+      ║  CONTRIBUTORS SECTION                                         ║
+      ║  Contributors add their own buttons here via Pull Request.    ║
+      ║  Format: <a href="/contributors/their-name.html"             ║
+      ║         class="cta-btn contributor-btn">Their Name</a>       ║
+      ╚══════════════════════════════════════════════════════════════╝
+    -->
+    <div class="panel">
+      <h3>Contributors</h3>
+      
+      <div class="cta-row">
+        <a href="/Pages/About/Contributors/PJFry/me.html" class="cta-btn contributor-btn">
+          OSMays8338
+        </a>
+        <!-- Contributors add buttons here via PR -->
+      </div>
+    </div>
 
-  <script>
-    // Copy current URL to clipboard
-    function copyCurrentUrl(event) {
-      event.preventDefault();
-      const url = window.location.href;
-      navigator.clipboard.writeText(url).then(
-        () => alert("Link copied to clipboard!"),
-        () => alert("Unable to copy link.")
-      );
-    }
-
-    // Service worker
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register("service-worker.js")
-        .catch((err) => console.error("Service Worker registration failed:", err));
-    }
-
-    // PWA install banner
-    let deferredPrompt;
-    window.addEventListener("beforeinstallprompt", (e) => {
-      e.preventDefault();
-      deferredPrompt = e;
-
-      setTimeout(() => {
-        const banner = document.getElementById("install-banner");
-        if (!localStorage.getItem("pjfry_install_dismissed")) {
-          banner.classList.remove("hidden");
-        }
-      }, 3000);
-    });
-
-    document.getElementById("install-btn").addEventListener("click", async () => {
-      const banner = document.getElementById("install-banner");
-      banner.classList.add("hidden");
-
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        await deferredPrompt.userChoice;
-        deferredPrompt = null;
-      }
-    });
-
-    document.getElementById("dismiss-btn").addEventListener("click", () => {
-      document.getElementById("install-banner").classList.add("hidden");
-      localStorage.setItem("pjfry_install_dismissed", "true");
-    });
-  </script>
+  <footer>
+    © 2025 OSMays8338 — All Rights Reserved.
+  </footer>
 </body>
 </html>
