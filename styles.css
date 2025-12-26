@@ -104,10 +104,6 @@ header {
   box-sizing: border-box;
 }
 
-/* home-page uses hamburger + nav + copy */
-.home-page header {
-}
-
 /* back-header pages: back left, copy right */
 .back-header header {
   justify-content: space-between;
