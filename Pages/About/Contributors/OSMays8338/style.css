@@ -176,7 +176,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;   /* center icon horizontally */
-  margin: 12px 0 4px;        /* gap above/below icon */
+  margin: 12px 0 25px;        /* gap above/below icon */
 }
 
 .github-footer-icon {
